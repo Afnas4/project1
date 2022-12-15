@@ -1,0 +1,63 @@
+{% extends 'mainbase.html' %}
+{% block title %}Contact{% endblock title %}
+{% block content %}
+
+{% if out == 1%}
+<div class="alert alert-dark container text-centre col-6" role="alert">
+    Hi {{name}},we will contact you soon.
+</div>
+{% endif %}
+<div class="container d-flex">
+    <div class="container w-25 mr-5">
+        <h3 class="text-muted">Contact US</h3>
+        <p class="text-muted">Call us:</p>
+        <p>Call: 9539353012</p>
+        <p class="text-muted">EMAIL us:</p>
+        <p>contact@inmakes.com</p>
+        <p class="text-muted">Placement cell:</p> 
+        <p>hr@inmakes.com</p>
+        <p class="text-muted">Contact us on:</p>
+        <p>whatsapp</p>
+        <p class="text-muted">Locate us on:</p>
+        <p>google map</p>
+    </div>
+<div class="container ml-5">
+    <h5> How can we be of assistance</h5>
+<p>
+    If you require clarifications, we are happy to help you</p>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="row mb-3">
+            <label for="name" class="col-sm-2 col-form-label">name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="phno" class="col-sm-2 col-form-label">Phone number</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="phno" name="phno">
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">submit</button>
+        </div>
+
+
+    </form>
+</div>
+
+
+  
+
+{% endblock content %}
+
+
+
+

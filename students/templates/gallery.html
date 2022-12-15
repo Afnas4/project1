@@ -1,0 +1,27 @@
+{% extends 'mainbase.html' %}
+{% load static %}
+{% block title %}Gallery{% endblock title %}
+{% block content %}
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+     
+      <div class="carousel-item" >
+        <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/5ee57d7f-7e7e-47d6-b18b-27848a4907f4-5.jpeg"style="height:75vh" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item" >
+        <img src="https://luminartechnolabbucket.s3.ap-south-1.amazonaws.com/a499a926-17c1-4f98-b2d6-8af4993454d7-2.jpg" style="height:75vh" class="d-block w-100 " alt="...">
+      </div>
+      <div class="carousel-item " >
+        <img src="https://content.jdmagicbox.com/comp/ernakulam/d5/0484px484.x484.181027155021.i4d5/catalogue/luminar-technolab-kakkanad-ernakulam-computer-training-institutes-for-python-2vja4sc8d4.jpg"style="height:75vh" class="d-block w-100" alt="...">
+      </div>
+    </div>
+   <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+</div>
+  {% endblock content %}

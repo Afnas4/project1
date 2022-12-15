@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Show student{% endblock title %} 
+{% block content %}
+<h1 class="text-center">Student Details</h1>
+<table class='container table table-dark table-striped text-center'>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Address</th>
+        <th>Place</th>
+        
+    </tr>
+    {% for i in form %}
+    <tr>
+        <td>{{i.student_name}}</td>
+        <td>{{i.student_email}}</td>
+        <td>{{i.student_phone}}</td>
+        <td>{{i.student_address}}</td>
+        <td>{{i.student_place}}</td>
+        <td><button type="submit">Edit</button></td>
+       
+    </tr>
+    {% endfor %}
+    
+</table>
+
+
+{% endblock content %}

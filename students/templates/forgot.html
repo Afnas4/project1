@@ -1,0 +1,26 @@
+{% extends 'mainbase.html' %}
+{% load static %}
+{% block title %}forgot{% endblock title %}
+{% block content %}
+<div class="text-center" style="border:3px ">
+    <h2>FORGOT PASSWORD</h2>
+        <form action="" method="post">
+            <div class="mt-2">
+                <input id="email" type="email" placeholder="Email"><br>
+            </div>
+            <div class="mt-2">
+                <input id="password" name="password" placeholder="Password"><br>
+            </div>
+            <div class="mt-2">
+                <input id="password2" name="password" placeholder="Confirm Password"><br>
+            </div>
+            <div class="mt-2">
+                <button type="submit" class="btn btn-success">SUBMIT</button><br>
+            </div>
+        </form>
+    </div>
+
+
+
+
+{% endblock content %}
